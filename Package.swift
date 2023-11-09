@@ -4,19 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "Stylitics_UX_SDK",
+    name: "StyliticsSPM",
     platforms: [
             .iOS(.v13)
         ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Stylitics_UX_SDK",
-            targets: ["StyliticsData", "StyliticsUI"]),
+            name: "StyliticsSPM",
+            targets: ["StyliticsSPM", "StyliticsData", "StyliticsUI"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
+        .target(
+                   name: "StyliticsSPM"
+               ),
         .binaryTarget(name: "StyliticsData",
                       url: "https://github.com/parimalmodi/StyliticsFrameworks/blob/v1.1.0/StyliticsData.xcframework.zip",
                       checksum: "a7c13ee5dd59951d781b218c1431565d5cd3ff74949529148f6c567a24d2ca9a"
