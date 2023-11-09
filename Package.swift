@@ -21,11 +21,11 @@ let package = Package(
                    name: "StyliticsSPM"
                ),
         .binaryTarget(name: "StyliticsData",
-                      url: "https://github.com/parimalmodi/StyliticsFrameworks/blob/v1.1.0/StyliticsData.xcframework.zip",
+                      url: "https://github.com/parimalmodi/StyliticsFrameworks/blob/main/StyliticsData.xcframework.zip",
                       checksum: "a7c13ee5dd59951d781b218c1431565d5cd3ff74949529148f6c567a24d2ca9a"
                      ),
         .binaryTarget(name: "StyliticsUI",
-                      url: "https://github.com/parimalmodi/StyliticsFrameworks/blob/v1.1.0/StyliticsUI.xcframework.zip",
+                      url: "https://github.com/parimalmodi/StyliticsFrameworks/blob/main/StyliticsUI.xcframework.zip",
                       checksum: "e531b4e644cdc0e0479a972a92b6a9ab4e5649d389f07d673dfbe1a72ee42746"
                      ),
     ]
